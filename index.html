@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReelCraft - Шаблоны для рилсов</title>
+    <link rel="stylesheet" href="css\styles.css">
+    <link rel="stylesheet" href="css\main.css">
+   
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="#">ReelCraft</a>
+        <nav class="navigation_sections">
+            <a href="#" class="active">Главная</a>
+            <a href="upload.html">Загрузить</a>
+            <a href="profile.html">Профиль</a>
+        </nav>
+        <div class="search">
+            <input type="text" placeholder="Поиск шаблонов...">
+            <button>Найти</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="categories">
+          <button id="all_cat_but" class="category-btn active" data-category="all">Все</button>
+          <button class="category-btn" data-category="trends">Тренды</button>
+          <button class="category-btn" data-category="memes">Мемы</button>
+          <button class="category-btn" data-category="transitions">Переходы</button>
+          <button class="category-btn" data-category="effects">Эффекты</button>
+          <button class="category-btn" data-category="animations">Анимация</button>
+      </div>
+
+      <div class="grid-container">
+        <!-- Карточки шаблонов будут загружаться здесь -->
+        <div class="template-card">
+            <div class="template-preview">
+               <img src="https://i.pinimg.com/736x/8f/85/8d/8f858d773528e374b47b4f233ff9d373.jpg" />
+            </div>
+            <myButton props="123"></myButton>
+            <div class="template-info">
+                <h3>Крутой переход для рилса</h3>
+                <div class="author">@videomaster</div>
+                <div class="stats">
+                    <span>1.2k <i class="icon-download"></i></span>
+                    <span>543 <i class="icon-like"></i></span>
+                </div>
+                <button class="download-btn">Скачать шаблон</button>
+            </div>
+        </div>
+
+        <!-- Еще карточки... -->
+    </div>
+</main>
+
+<footer>
+    <div class="copyright">© 2025 ReelCraft. Все права защищены.</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

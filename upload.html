@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReelCraft - Шаблоны для рилсов</title>
+    <link rel="stylesheet" href="css\styles.css">
+    <link rel="stylesheet" href="css\upload.css">
+</head>
+<body>
+    <header>
+        <a class="logo" href="index.html">ReelCraft</a>
+        <nav class="navigation_sections">
+            <a href="index.html" >Главная</a>
+            <a href="upload.html" class="active">Загрузить</a>
+            <a href="profile.html">Профиль</a>
+        </nav>
+        <div class="search">
+            <input type="text" placeholder="Поиск шаблонов...">
+            <button>Найти</button>
+        </div>
+    </header>
+
+<main class="upload-page">
+    <h2>Загрузите свой шаблон</h2>
+    <div class="upload-container">
+        <div class="upload-area" id="dropZone">
+            <input type="file" id="fileInput" accept="video/*,.aep,.prproj" hidden>
+            <label for="fileInput" class="upload-btn">
+                <i class="icon-upload"></i>
+                <p>Перетащите файлы сюда или нажмите для выбора</p>
+                <span>Поддерживаемые форматы: MP4, AEP, PRPROJ</span>
+            </label>
+        </div>
+        
+        <form class="template-details">
+            <div class="form-group">
+                <label>Название шаблона</label>
+                <input type="text" placeholder="Например: Эпичный переход для рилса">
+            </div>
+            
+            <div class="form-group">
+                <label>Описание</label>
+                <textarea placeholder="Опишите ваш шаблон..."></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label>Категории</label>
+                <div class="tags-container">
+                    <input type="text" id="tagInput" placeholder="Добавьте теги...">
+                    <div class="tags-list"></div>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label>Программы</label>
+                <div class="software-options">
+                    <label><input type="checkbox" name="software" value="capcut"> CapCut</label>
+                    <label><input type="checkbox" name="software" value="premiere"> Premiere Pro</label>
+                    <label><input type="checkbox" name="software" value="aftereffects"> After Effects</label>
+                    <label><input type="checkbox" name="software" value="other"> Другое</label>
+                </div>
+            </div>
+            
+            <button type="submit" class="publish-btn">Опубликовать шаблон</button>
+        </form>
+    </div>
+</main>
+
+    <footer>
+      
+        <div class="copyright">© 2023 ReelCraft. Все права защищены.</div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
