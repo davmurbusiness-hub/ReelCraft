@@ -1,0 +1,175 @@
+/* Сетка шаблонов */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px 5%;
+}
+
+.template-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.template-card:hover {
+    transform: translateY(-5px);
+}
+
+.template-preview {
+    height: 300px;
+    overflow: hidden;
+}
+
+.template-preview video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.template-info {
+    padding: 15px;
+    background-color: #F8F8F8;
+}
+
+.template-info h3 {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+}
+
+.author {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.stats {
+    display: flex;
+    gap: 15px;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.download-btn {
+    background-color: #ff4757;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+/* Стили для страницы загрузки */
+.upload-page {
+    padding: 30px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.upload-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.upload-area {
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.upload-area:hover {
+    border-color: #ff4757;
+    background-color: #fff9f9;
+}
+
+
+
+
+
+
+
+
+
+
+.category-btn {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #e5e5e5;
+    color: #555;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    flex-shrink: 0;
+}
+
+.category-btn.active {
+    background-color: #ff4757;
+    color: white;
+    box-shadow: 0 4px 12px rgba(255, 71, 87, 0.3);
+}
+
+/* Стиль при наведении */
+.category-btn:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.category-btn.active:hover {
+    background-color: #ff5f6f;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.categories {
+    display: flex;
+    gap: 10px;
+    padding: 15px 5%;
+    overflow-x: auto;
+    scrollbar-width: none; /* Для Firefox */
+    white-space: nowrap;
+}
+
+.categories::-webkit-scrollbar {
+    display: none; /* Для Chrome/Safari */
+}
+/* Адаптивность */
+/*@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 15px;
+    }
+    
+    nav {
+        margin: 15px 0;
+    }
+    
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .upload-container {
+        grid-template-columns: 1fr;
+    }
+}*/
