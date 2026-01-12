@@ -3,62 +3,242 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ReelCraft - Шаблоны для рилсов</title>
-    <link rel="stylesheet" href="css\styles.css">
-    <link rel="stylesheet" href="css\main.css">
-   
+
+
+    <title>ReelCraft - Бесплатные шаблоны для рилсов Instagram и TikTok | Скачать готовые видеоэффекты</title>
+    <meta name="description" content="Бесплатные шаблоны для рилсов Instagram, TikTok, YouTube Shorts. Скачивайте готовые видеоэффекты, переходы, анимации и тренды для создания вирусного контента">
+    <meta name="keywords" content="шаблоны для рилсов, рилсы инстаграм, тикток видео, видеоэффекты, переходы, анимация, тренды, бесплатные шаблоны">
+
+
+
+    <link rel="canonical" href="https://reelcraft.ru/">
+
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "ReelCraft",
+            "description": "Платформа с бесплатными шаблонами для рилсов Instagram и TikTok",
+            "url": "https://reelcraft.ru/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://reelcraft.ru/search?q={search_term_string}",
+                "query-input": "required name=search_term_string"
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/main.css">
+
+
 </head>
 
 <body>
-    <header>
-        <a class="logo" href="#">ReelCraft</a>
-        <nav class="navigation_sections">
-            <a href="#" class="active">Главная</a>
-            <a href="upload.html">Загрузить</a>
-            <a href="profile.html">Профиль</a>
-        </nav>
-        <div class="search">
-            <input type="text" placeholder="Поиск шаблонов...">
-            <button>Найти</button>
-        </div>
-    </header>
-
-    <main>
-        <div class="categories">
-          <button id="all_cat_but" class="category-btn active" data-category="all">Все</button>
-          <button class="category-btn" data-category="trends">Тренды</button>
-          <button class="category-btn" data-category="memes">Мемы</button>
-          <button class="category-btn" data-category="transitions">Переходы</button>
-          <button class="category-btn" data-category="effects">Эффекты</button>
-          <button class="category-btn" data-category="animations">Анимация</button>
-      </div>
-
-      <div class="grid-container">
-        <!-- Карточки шаблонов будут загружаться здесь -->
-        <div class="template-card">
-            <div class="template-preview">
-               <img src="https://i.pinimg.com/736x/8f/85/8d/8f858d773528e374b47b4f233ff9d373.jpg" />
-            </div>
-            <myButton props="123"></myButton>
-            <div class="template-info">
-                <h3>Крутой переход для рилса</h3>
-                <div class="author">@videomaster</div>
-                <div class="stats">
-                    <span>1.2k <i class="icon-download"></i></span>
-                    <span>543 <i class="icon-like"></i></span>
-                </div>
-                <button class="download-btn">Скачать шаблон</button>
-            </div>
-        </div>
-
-        <!-- Еще карточки... -->
+<header role="banner">
+    <a class="logo" href="#" aria-label="ReelCraft - вернуться на главную">ReelCraft</a>
+    <nav class="navigation_sections" aria-label="Основная навигация">
+        <a href="#" class="active">Главная</a>
+        <a href="upload.html">Загрузить шаблон</a>
+        <a href="profile.html">Профиль</a>
+    </nav>
+    <div class="search" role="search">
+        <input type="text" placeholder="Поиск шаблонов..." aria-label="Поиск шаблонов">
+        <button>Найти</button>
     </div>
+</header>
+
+<main>
+    <section aria-labelledby="categories-title">
+        <h2 id="categories-title" class="visually-hidden">Категории шаблонов</h2>
+        <div class="categories" role="tablist" aria-label="Фильтры по категориям">
+            <button id="all_cat_but" class="category-btn active" data-category="all" role="tab" aria-selected="true">Все шаблоны</button>
+            <button class="category-btn" data-category="trends" role="tab" aria-selected="false">Тренды</button>
+            <button class="category-btn" data-category="memes" role="tab" aria-selected="false">Мемы</button>
+            <button class="category-btn" data-category="transitions" role="tab" aria-selected="false">Переходы</button>
+            <button class="category-btn" data-category="effects" role="tab" aria-selected="false">Эффекты</button>
+            <button class="category-btn" data-category="animations" role="tab" aria-selected="false">Анимация</button>
+        </div>
+    </section>
+
+    <section aria-labelledby="templates-title">
+        <h1 id="templates-title" class="visually-hidden">Шаблоны для рилсов</h1>
+        <div class="grid-container">
+            <article class="template-card" data-category="transitions" itemscope itemtype="http://schema.org/CreativeWork">
+                <div class="template-preview">
+                    <img src="https://workspace.ru/upload/iblock/17f/1.jpg"
+                         alt="Пример крутого перехода для рилса - волнообразная анимация"
+                         itemprop="image"
+                         loading="lazy">
+                </div>
+                <myButton props="123"></myButton>
+                <div class="template-info">
+                    <h3 itemprop="name">Крутой переход для рилса</h3>
+                    <div class="author" itemprop="author">@videomaster</div>
+                    <div class="stats">
+                        <span itemprop="interactionStatistic">1.2k <i class="icon-download" aria-label="загрузок"></i></span>
+                        <span>543 <i class="icon-like" aria-label="лайков"></i></span>
+                    </div>
+                    <button class="download-btn" itemprop="offers">Скачать шаблон</button>
+                </div>
+            </article>
+
+            <article class="template-card" data-category="effects" itemscope itemtype="http://schema.org/CreativeWork">
+                <div class="template-preview">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR09QwWtpS9XPARLsGq8koycFNsBd9r7v-KfQ&s"
+                         alt="Энергичный старт для рилса с эффектом вспышки"
+                         itemprop="image"
+                         loading="lazy">
+                </div>
+                <myButton props="124"></myButton>
+                <div class="template-info">
+                    <h3 itemprop="name">Энергичный старт для рилса</h3>
+                    <div class="author" itemprop="author">@motionartist</div>
+                    <div class="stats">
+                        <span itemprop="interactionStatistic">2.8k <i class="icon-download" aria-label="загрузок"></i></span>
+                        <span>1.2k <i class="icon-like" aria-label="лайков"></i></span>
+                    </div>
+                    <button class="download-btn" itemprop="offers">Скачать шаблон</button>
+                </div>
+            </article>
+
+            <article class="template-card" data-category="animations" itemscope itemtype="http://schema.org/CreativeWork">
+                <div class="template-preview">
+                    <img src="https://smmplanner.com/blog/content/images/2021/06/reels-blog-oblozhka.jpg"
+                         alt="Текст с ударным эффектом для тиктока"
+                         itemprop="image"
+                         loading="lazy">
+                </div>
+                <myButton props="125"></myButton>
+                <div class="template-info">
+                    <h3 itemprop="name">Текст с ударным эффектом</h3>
+                    <div class="author" itemprop="author">@typographyking</div>
+                    <div class="stats">
+                        <span itemprop="interactionStatistic">3.4k <i class="icon-download" aria-label="загрузок"></i></span>
+                        <span>1.8k <i class="icon-like" aria-label="лайков"></i></span>
+                    </div>
+                    <button class="download-btn" itemprop="offers">Скачать шаблон</button>
+                </div>
+            </article>
+
+            <article class="template-card" data-category="transitions" itemscope itemtype="http://schema.org/CreativeWork">
+                <div class="template-preview">
+                    <img src="https://retext.ai/articles/assets/09ed7d58-e309-4eda-bac5-981637b0269c"
+                         alt="Модный глитч-переход для инстаграм рилсов"
+                         itemprop="image"
+                         loading="lazy">
+                </div>
+                <myButton props="126"></myButton>
+                <div class="template-info">
+                    <h3 itemprop="name">Модный глитч-переход</h3>
+                    <div class="author" itemprop="author">@glitchmaster</div>
+                    <div class="stats">
+                        <span itemprop="interactionStatistic">4.1k <i class="icon-download" aria-label="загрузок"></i></span>
+                        <span>2.3k <i class="icon-like" aria-label="лайков"></i></span>
+                    </div>
+                    <button class="download-btn" itemprop="offers">Скачать шаблон</button>
+                </div>
+            </article>
+
+            <article class="template-card" data-category="effects" itemscope itemtype="http://schema.org/CreativeWork">
+                <div class="template-preview">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj3mRjM-lxJ4J6_sUkiStwK-Lqs-mId4RATA&s"
+                         alt="Эффект разрыва экрана для динамичных видео"
+                         itemprop="image"
+                         loading="lazy">
+                </div>
+                <myButton props="127"></myButton>
+                <div class="template-info">
+                    <h3 itemprop="name">Эффект разрыва экрана</h3>
+                    <div class="author" itemprop="author">@transitionpro</div>
+                    <div class="stats">
+                        <span itemprop="interactionStatistic">2.9k <i class="icon-download" aria-label="загрузок"></i></span>
+                        <span>1.5k <i class="icon-like" aria-label="лайков"></i></span>
+                    </div>
+                    <button class="download-btn" itemprop="offers">Скачать шаблон</button>
+                </div>
+            </article>
+
+            <article class="template-card" data-category="memes" itemscope itemtype="http://schema.org/CreativeWork">
+                <div class="template-preview">
+                    <img src="https://png.klev.club/uploads/posts/2024-05/thumbs/png-klev-club-arji-p-reels-png-7.png"
+                         alt="Шаблон для опросов в сторис и рилсах"
+                         itemprop="image"
+                         loading="lazy">
+                </div>
+                <myButton props="128"></myButton>
+                <div class="template-info">
+                    <h3 itemprop="name">Шаблон для опросов</h3>
+                    <div class="author" itemprop="author">@reelcreator</div>
+                    <div class="stats">
+                        <span itemprop="interactionStatistic">5.2k <i class="icon-download" aria-label="загрузок"></i></span>
+                        <span>3.1k <i class="icon-like" aria-label="лайков"></i></span>
+                    </div>
+                    <button class="download-btn" itemprop="offers">Скачать шаблон</button>
+                </div>
+            </article>
+
+            <article class="template-card" data-category="animations" itemscope itemtype="http://schema.org/CreativeWork">
+                <div class="template-preview">
+                    <img src="https://png.klev.club/uploads/posts/2024-05/thumbs/png-klev-club-aszz-p-reels-png-8.png"
+                         alt="Анимированный календарь для планирования контента"
+                         itemprop="image"
+                         loading="lazy">
+                </div>
+                <myButton props="129"></myButton>
+                <div class="template-info">
+                    <h3 itemprop="name">Анимированный календарь</h3>
+                    <div class="author" itemprop="author">@calendarreels</div>
+                    <div class="stats">
+                        <span itemprop="interactionStatistic">2.3k <i class="icon-download" aria-label="загрузок"></i></span>
+                        <span>1.4k <i class="icon-like" aria-label="лайков"></i></span>
+                    </div>
+                    <button class="download-btn" itemprop="offers">Скачать шаблон</button>
+                </div>
+            </article>
+
+            <article class="template-card" data-category="trends" itemscope itemtype="http://schema.org/CreativeWork">
+                <div class="template-preview">
+                    <img src="https://blog.chatplace.io/wp-content/uploads/2024/05/%D0%B2%D0%B8%D1%80%D1%83%D1%81%D0%BD%D1%8B%D0%B5-%D1%80%D0%B8%D0%BB%D1%81-scaled.jpg"
+                         alt="Кинематографичный zoom-эффект для видео"
+                         itemprop="image"
+                         loading="lazy">
+                </div>
+                <myButton props="130"></myButton>
+                <div class="template-info">
+                    <h3 itemprop="name">Кинематографичный zoom</h3>
+                    <div class="author" itemprop="author">@cinecreator</div>
+                    <div class="stats">
+                        <span itemprop="interactionStatistic">3.7k <i class="icon-download" aria-label="загрузок"></i></span>
+                        <span>2.0k <i class="icon-like" aria-label="лайков"></i></span>
+                    </div>
+                    <button class="download-btn" itemprop="offers">Скачать шаблон</button>
+                </div>
+            </article>
+        </div>
+    </section>
 </main>
 
-<footer>
+<footer role="contentinfo">
     <div class="copyright">© 2025 ReelCraft. Все права защищены.</div>
 </footer>
 
 <script src="script.js"></script>
+
+<!-- Стиль для скрытых заголовков -->
+<style>
+    .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+    }
+</style>
 </body>
 </html>
